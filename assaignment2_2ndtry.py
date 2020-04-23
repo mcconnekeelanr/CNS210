@@ -7,25 +7,13 @@ import re
 import argparse
 parser = argparse.ArgumentParser("DOWNLOAD STUFF")
 
-parser.add_argument("userchoice",help="python 2.7.4, 3.3.1, or 3.2.4", choices=["a","b","c"])
+parser.add_argument("userchoice",help="python 2.7.4, 3.3.1, or 3.2.4", choices=["2.7.4"])
 print("choose wisley my master")
 args=parser.parse_args()
-if args.userchoice=="a":
+if args.userchoice=="2.7.4":
     print("did you say a")
     print("yea im downloading yo")
     urllib.request.urlretrieve("https://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.xz")
-    print("hey there im done downloading yo")
-
-elif args.userchoice=="b":
-    print("did you say b")
-    print("yea im downloading yo")
-    urllib.request.urlretrieve("https://www.python.org/downloads/release/python-331/","Keelan_python_3.3.1")
-    print("hey there im done downloading yo")
-
-elif args.userchoice=="c":
-    print("did you say c")
-    print("yea im downloading yo")
-    urllib.request.urlretrieve("https://www.python.org/downloads/release/python-324", "Keelan_python_3.2.4")
     print("hey there im done downloading yo")
 
 
