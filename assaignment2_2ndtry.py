@@ -13,7 +13,7 @@ args=parser.parse_args()
 if args.userchoice=="a":
     print("did you say a")
     print("yea im downloading yo")
-    urllib.request.urlretrieve("https://www.python.org/downloads/release/python-274/", "Keelan_python_2.7.4")
+    urllib.request.urlretrieve("https://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.xz")
     print("hey there im done downloading yo")
 
 elif args.userchoice=="b":
