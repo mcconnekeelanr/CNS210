@@ -22,16 +22,17 @@ parser= argparse.ArgumentParser()   #begins the module
 parser.add_argument("num",help="please type a int here",type=int) #adds the argument for num
 args = parser.parse_args()                       #variable args holds the parse argument   
 print(args.num)                                 #prints args with the variable argument num
-f=open("krm-hw","w")                            #opens krm-hw to write to
+filename= input("where would like me to write this file to\n")
+f=open(filename,"w")                            #opens krm-hw to write to
 fib1=args.num                                   #variables 
 dib0=args.num
 print("do you want to overwrite?")
-answer=input("yes or no"+ " ")                       #userinput to overwrite or not
+answer=input("yes or no\n")                       #userinput to overwrite or not
 if answer=="no":
     f.close()
     print("no? ok canceling")
         
-else:
+elif answer=="yes":
     print("yes?, ok here we go")
     while sum1<1000000:          #condensed the above code into this and added writing to file
         print(sum1)                             
@@ -42,4 +43,6 @@ else:
         f.write(str(sum1))
         f.write(",")
 
-
+else:
+    print("invalid input....")
+    print("goodbye.")
